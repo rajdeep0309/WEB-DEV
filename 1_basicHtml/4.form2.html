@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Job Application</h2>
+    <form action="">
+        <label for="name">Name:</label>
+        <br>
+        <input type="name">
+        <br>
+        <label for="email">Email:</label>
+        <br>
+        <input type="eamil">
+        <br>
+        <label for="phone">Phone:</label>
+        <br>
+        <input type="tel">
+        <br>
+        <label for="resume">Resume:</label>
+        <br>
+        <input type="file" value="choose file">
+        <br>
+        <label for="exp">Experience(years):</label>
+        <input type="number" value="0">
+
+        <fieldset>
+            <legend>Skill</legend>
+            <input type="checkbox" id="html" value="1">
+            <label for="html">HTML</label>
+            <br>
+            <input type="checkbox" id="css" value="1">
+            <label for="css">CSS</label>
+            <br>
+            <input type="checkbox" id="javaS" value="1">
+            <label for="javaS">JavaScript</label>
+            
+        </fieldset>
+        <label for="education">Highest Eduction:</label>
+        <br>
+        <select name="eduction" id="education" >
+            <option value="highschool">High School</option>
+            <option value="college">College</option>
+            <option value="others">Others</option>
+        </select>
+        <br>
+        <fieldset>
+            <legend>Availability</legend> 
+            <label for="radio1">Full-time</label>
+            <input type="radio" name="radio1" id="radio1"> <br>
+        
+        <br>
+        <label for="radio2">Part-time</label>
+        <input type="radio" name="radio1" id="radio2"> <br>
+        
+
+
+        </fieldset>
+                <label for="addComm">Additional Comments:</label> <br>
+        <textarea name="addComm" id="addComm" cols="20" rows="5"></textarea>
+
+        <input type="submit" value="Submit application">
+    </form>
+</body>
+</html>

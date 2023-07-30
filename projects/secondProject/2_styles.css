@@ -1,0 +1,86 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 1%, rgba(148,187,233,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    height: 600px;
+    width: 350px;
+    padding-bottom: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+#textBox{
+    text-align: center;
+    font-weight: 400;
+}
+.card img{
+    height: 30%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card button{
+    width: 90%;
+    height: 60px;
+    border-radius: 5px;
+    background-color: rgb(32, 32, 108);
+    color: aliceblue;
+    box-shadow: rgba(6, 6, 6, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    
+}
+.card a{
+    text-decoration: none;
+}
+#amountBox{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+#amountBox img{
+    height: 50px;
+    width: 50px;
+}
+#amountBar{
+    width: 85%;
+    height: 55px;
+    border-radius: 5px;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+#annualPlan{
+    width: 50%;
+    height:100%; 
+    padding-top: 30px;
+    padding-bottom: 50px;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    
+    /* justify-content: space-around; */
+}
+
+#annualPlan p{
+    height:1.5px;
+    width: 100%;
+}

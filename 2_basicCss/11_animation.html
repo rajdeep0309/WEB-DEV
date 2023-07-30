@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .container{
+            border: 2px black solid;
+            margin: 3px;
+            padding: 2px;
+            background-color: beige;
+
+            height: 100vh;
+            width: 100vw;
+           display: flex;
+            flex-direction: row;
+            
+
+        }
+        .box2{
+            border: 2px solid black;
+            padding: 2px;
+            margin: 2px;
+
+            background-color: blueviolet;
+
+            height: 100px;
+            width: 200px;
+
+        }
+        .box{
+            border:2px solid black;
+            padding: 2px;
+            margin: 2px;
+
+            background-color: blueviolet;
+
+            height: 100px;
+            width: 200px;
+            position: relative;
+            animation-name: animationBox;
+            animation-duration: 5s;
+            animation-iteration-count:infinite;
+            animation-delay: 0s;
+            animation-direction: alternate;
+            animation-timing-function: cubic-bezier(0, 1.4, 0.93, -0.47);
+            animation-timing-function: linear;
+            /* animation-fill-mode: both; */
+            /* animation-fill-mode: backwards; */
+            /* animation-fill-mode: forwards; */
+
+            /* shorthand notation*/
+        /* animation: name  duration timing-function delay iteration-count direction fill-mode; */
+          
+        }
+        @keyframes animationBox{
+            from{
+                top:0;
+                left:0;
+            }
+            to{
+                top:0;
+                left: 1200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome To First Animation</h1>
+    <div class="container">
+        <div class="box">
+            BOX1
+        </div>
+        <div class="box2">
+            Box2
+        </div>
+    </div>
+</body>
+</html>

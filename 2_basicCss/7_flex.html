@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 5px solid black;
+            height: 1000px;
+            /* width: 1000px; */
+            background-color: antiquewhite;
+            display: flex;
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+            flex-direction: row;
+            /* flex-direction: column;
+            /* wrap used for squeez the screen item box will go in next line */
+            flex-wrap: wrap; 
+            /* flex-flow: row-reverse wrap; */
+
+            justify-content: start;
+
+            /* justify-content: is act on main axis */
+            /* justify-content: space-evenly; */
+            /* align-items: is act on cross axis */
+            /* align-content:center; */
+            align-items: start;
+
+           
+            
+        }
+        .box{
+            /* height: 200px;
+            width: 200px; */
+            border:solid black 2px;
+            margin: 2px;
+            padding: 2px;
+
+        }
+        #box1{
+            background-color: aqua;
+            /* flex-grow: 4;
+            flex-shrink: 3; */
+            align-self: center;
+        }
+        #box2{
+            background-color: rgb(34, 4, 166);
+            /* flex-grow: 1;
+            flex-shrink: 5; */
+            align-self: self-end;
+        }
+        #box3{
+            background-color: rgb(211, 145, 12);
+            /* flex-grow: 3;
+            flex-shrink: 2; */
+        }
+        #box4{
+            background-color: rgb(202, 9, 134);
+            /* flex-grow: 2;
+            flex-shrink: 1; */
+            /* /* flex: 1 4; flex grow- flex-shink flex-basis(dimention) */
+            
+            /* flex: center; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">BOX1</div>
+        <div class="box"id="box2">BOX2</div>
+        <div class="box"id="box3">BOX4</div>
+        <div class="box"id="box4">BOX5</div>
+    </div>
+</body>
+</html>

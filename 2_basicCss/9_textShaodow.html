@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --global-color:rgb(243, 156, 245);
+            --global-width:500px;
+        }
+        .container{
+            background-color: var(--global-color);
+            height: 650px;
+            width: 1500px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .box{
+            --local-color:rgb(225, 219, 56);
+            --local-width:350px;
+            --local-height:250px;
+            height: var(--local-height);
+            width: var(--local-width);
+            border: 2px black solid;
+            margin: 5px;
+            padding: 2px;
+            background-color:var(--local-color);
+            /* x-offset/y offset/colour */
+            /* box-shadow: 2px 5px red; */
+            /* x-offset/y offset/colour/blurr effect*/
+            /* box-shadow: 10px 10px 4px red; */
+            /* x-offset/y offset/colour/blurr effect/spread effect */
+            box-shadow: 10px 14px 5px 7px rgb(148, 12, 12);
+
+
+
+        }
+        #head1{
+            text-shadow: 3px 3px 2px rgb(126, 119, 225),6px 5px 2px rgb(209, 112, 56),5px 4px 2px rgb(56, 44, 219);
+            /* text-shadow: 5px 4px 2px yellowgreen; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1 id="head1">Welcome to WebWorld</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, cupiditate earum veniam 
+                voluptatibus in fuga magnam aut aliquid cumque exercitationem eos atque soluta repudiandae
+                 natus aliquam debitis, cum dolor incidunt. Quae non id laudantium suscipit molestiae eum 
+                 commodi, accusamus, perferendis rem aliquid dolor asperiores fugiat, assumenda nostrum.
+                  Voluptatem, similique modi?
+
+            </p>
+        </div>
+    </div>
+</body>
+</html>
